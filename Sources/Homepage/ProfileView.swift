@@ -5,7 +5,7 @@ struct ProfileView: View {
     func linkText(url: String, text: String) -> some View {
         HTML("a", ["href": url, "style": "text-decoration: none;"]) {
             Text(text)
-                .foregroundColor(Color.init(hex: "5865F2"))
+                .foregroundColor(Color.init(hex: "58a0f2"))
         }
     }
 
@@ -21,7 +21,7 @@ struct ProfileView: View {
                 .font(.largeTitle)
                 .padding()
             HStack {
-                linkText(url: "https://twitter.com/twitter", text: "Twitter")
+                linkText(url: "https://twitter.com/sizumita", text: "Twitter")
                     .padding()
                 linkText(url: "https://github.com/sizumita", text: "Github")
                     .padding()
