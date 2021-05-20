@@ -10,7 +10,14 @@ struct TokamakApp: App {
 
 struct ContentView: View {
     var body: some View {
-        Text("Hello, world!")
+        ScrollView(.vertical, showsIndicators: false) {
+            VStack {
+                ProfileView()
+                    .padding(.vertical, 100)
+                IntroductionView()
+                    .padding()
+            }
+        }
     }
 }
 
