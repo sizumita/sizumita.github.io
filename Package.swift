@@ -14,7 +14,11 @@ let package = Package(
             name: "Homepage",
             dependencies: [
                 .product(name: "TokamakShim", package: "Tokamak")
-            ]),
+            ],
+            resources: [
+                .process("Resources")
+            ]
+        ),
         .testTarget(
             name: "HomepageTests",
             dependencies: ["Homepage"]),

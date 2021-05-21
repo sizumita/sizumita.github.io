@@ -10,13 +10,10 @@ struct ProfileView: View {
     }
 
     var body: some View {
-        let params: [HTMLAttribute: String] = ["src": "https://avatars.githubusercontent.com/u/17804838", "width": "150px", "height": "150px"]
-
         return VStack {
-            AnyView(
-                HTML("img", params)
-            )
-            .clipShape(Circle())
+            Image("icon.png", bundle: .module)
+                .frame(width: 150, height: 150)
+                .clipShape(Circle())
             Text("Sumito Izumita")
                 .font(.largeTitle)
                 .padding()
